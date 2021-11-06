@@ -2,42 +2,73 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e2efb72227.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Tip calculator app</title>
+
 </head>
 
 <body>
 
-  <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
-  <div class="calculator">
-    Bill
+  <div class="container">
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+    <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
 
-    Number of People
+    <div class="calculator">
 
-    Tip Amount
-    / person
+      <div class="box1">
 
-    Total
-    / person
+        <label for="bill" style="margin-top: 20px;"> Bill </label>
+        <span class="dollar-sign">$</span>
+        <input type="number" placeholder="0">
 
-    Reset
+        <label for="tip" style="margin-top: 30px;"> Select Tip % </label>
+        <div class="buttons">
+          <button class="btn"> 5% </button>
+          <button class="btn"> 10% </button>
+          <button class="btn"> 15% </button>
+          <button class="btn"> 25% </button>
+          <button class="btn"> 50% </button>
+          <input class="btn1" type="number" placeholder="Custom">
+        </div>
+
+        <label for="people" style="margin-top: 30px;"> Number of People </label>
+        <i class="fas fa-user"></i>
+        <input type="number" placeholder="0" style="margin-bottom: 20px;">
+
+      </div>
+
+      <div class="box2">
+
+        <div class="col">
+          <p> Tip Amount </p>
+          <p style="color: #5E7A7D;"> / person </p>
+          <span class="amount">$0.00</span>
+        </div>
+
+        <div class="col">
+          <p> Total </p>
+          <p style="color: #5E7A7D;"> / person </p>
+          <span class="amount">$0.00</span>
+        </div>
+
+        <button class="btn2"> Reset </button>
+
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Nirmani Roopasinghe</a>.
+    </div>
+
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Nirmani Roopasinghe</a>.
-  </div>
 </body>
 
 </html>

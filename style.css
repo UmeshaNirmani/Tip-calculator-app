@@ -1,26 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+body,
+.container,
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   text-align: center;
   background-color: #c5e4e7;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
 }
 
-.calculator{
-  width: 60%;
-  height: 50vh;
+.container {
+  align-items: center;
+  margin: 50px 0px;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  width: 100%;
+  background-color: #f4fafa;
+  border: none;
+  padding: 5px;
+  font-size: 24px;
+  outline: none;
+  direction: rtl;
+  font-family: "Space Mono", monospace;
+  border-radius: 5px;
+}
+
+.calculator {
+  width: 80%;
   background-color: #fff;
- align-self: center;
+  display: flex;
+  border-radius: 13px;
+  box-shadow: 0 0 5px 2px #7f9c9f;
+  padding: 25px;
+  margin: 50px;
+}
+
+.box1 {
+  width: 50%;
+  color: #00494d;
+  padding: 0 35px 0 20px;
+  align-items: flex-start;
+}
+
+.box2 {
+  width: 50%;
+  background-color: #00494d;
+  color: #f4fafa;
+  border-radius: 10px;
+  padding: 50px 40px 20px 40px;
+}
+
+.btn,
+.btn1,
+.btn2 {
+  font-family: "Space Mono", monospace;
+  border: none;
+  width: 30%;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #00494d;
+  color: #fff;
+}
+
+.btn1 {
+  font-weight: 700;
+  color: #00494d;
+  background-color: #f4fafa;
+  width: 30% !important;
+}
+
+.btn1::placeholder {
+  text-align: center;
+}
+
+.btn2 {
+  background-color: #20a291;
+  color: #00494d;
+  width: 100%;
+  margin-top: 80px;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.dollar-sign {
+  padding: 60px;
+  font-size: 24px;
+}
+.fa-user {
+  bottom: 50px;
+  font-size: medium;
+}
+
+.dollar-sign,
+.fa-user {
+  position: absolute;
+  padding-left: 8px;
+  color: #7f9c9f;
+}
+
+.col {
+  column-count: 2;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.amount {
+  font-size: 40px;
+  float: right;
+  color: #20a291;
+  font-weight: 700;
 }
