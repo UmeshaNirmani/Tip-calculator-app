@@ -130,7 +130,7 @@ input[type="number"] {
   font-size: 24px;
 }
 .fa-user {
-  bottom: 50px;
+  top: 500px;
   font-size: medium;
 }
 
@@ -163,4 +163,64 @@ input:focus-visible {
   background-color: #c5e4e7;
   color: #00494d;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1103px) {
+  .btn,
+  .btn1 {
+    width: 44% !important;
+  }
+  .buttons {
+    column-gap: 10%;
+  }
+  .fa-user {
+    top: 564px;
+  }
+  .btn2 {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .box1,
+  .box2 {
+    width: 100%;
+  }
+  .calculator {
+    flex-direction: column;
+  }
+  .btn2 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .col {
+    column-count: 1;
+  }
+  .amount {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body,
+  .btn,
+  .btn1,
+  .btn2,
+  input::placeholder,
+  input {
+    font-size: 12px !important;
+  }
+  .dollar-sign {
+    font-size: 15px;
+    padding-top: 43px;
+  }
+  .fa-user {
+    font-size: smaller;
+    top: 502px;
+  }
+  .amount {
+    font-size: 22px;
+  }
 }
