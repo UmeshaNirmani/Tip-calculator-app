@@ -25,15 +25,13 @@ body,
 body {
   text-align: center;
   background-color: #c5e4e7;
-  align-items: center;
   justify-content: center;
   font-family: "Space Mono", monospace;
-  font-size: 24px;
 }
 
 .container {
   align-items: center;
-  margin: 50px 0px;
+  padding: 50px 0px;
   width: 100%;
 }
 
@@ -49,7 +47,7 @@ input[type="number"] {
   background-color: #f4fafa;
   border: none;
   padding: 5px;
-  font-size: 24px;
+  font-size: 18px;
   outline: none;
   direction: rtl;
   font-family: "Space Mono", monospace;
@@ -57,7 +55,7 @@ input[type="number"] {
 }
 
 .calculator {
-  width: 80%;
+  width: 60%;
   background-color: #fff;
   display: flex;
   border-radius: 13px;
@@ -90,7 +88,7 @@ input[type="number"] {
   padding: 8px 0;
   border-radius: 5px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .btn {
@@ -126,7 +124,7 @@ input[type="number"] {
 }
 
 .dollar-sign {
-  padding: 60px;
+  padding: 45px;
   font-size: 24px;
 }
 .fa-user {
@@ -148,8 +146,19 @@ input[type="number"] {
 }
 
 .amount {
-  font-size: 40px;
+  font-size: 30px;
   float: right;
   color: #20a291;
+  font-weight: 700;
+}
+
+input:focus-visible {
+  outline: solid #20a291 1px;
+}
+
+.btn:hover,
+.btn2:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
   font-weight: 700;
 }
