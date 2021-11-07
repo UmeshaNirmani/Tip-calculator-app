@@ -52,6 +52,8 @@ input[type="number"] {
   direction: rtl;
   font-family: "Space Mono", monospace;
   border-radius: 5px;
+  color: #00494d;
+  font-weight: 700;
 }
 
 .calculator {
@@ -124,7 +126,7 @@ input[type="number"] {
 }
 
 .dollar-sign {
-  padding: 45px;
+  padding: 47px;
   font-size: 24px;
 }
 .fa-user {
